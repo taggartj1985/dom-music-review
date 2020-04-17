@@ -20,7 +20,7 @@ const createAlbumListItem = function (form) {
   const albumListItem = document.createElement('li');
   albumListItem.classList.add('album-list-item');
 
-  const artist = document.createElement('h2');
+  const artist = document.createElement('h3');
   artist.textContent = form.artist.value;
   albumListItem.appendChild(artist);
 
@@ -29,12 +29,18 @@ const createAlbumListItem = function (form) {
   albumListItem.appendChild(album);
 
   const genre = document.createElement('p');
-  genre.textContent = form.category.value;
+  genre.textContent = form.genre.value;
   albumListItem.appendChild(genre);
-  
-  const rating = document.createElement('p');
-  rating.textContent = form.rating.value;
-  albumListItem.appendChild(rating);
+
+  const review = document.createElement('p');
+  review.textContent = form.review.value;
+  albumListItem.appendChild(review);
 
   return albumListItem;
+}
+
+
+const handleDeleteAllClick = function (event) {
+  const albumList = document.querySelector('#album-list');
+  albumList.innerHTML = '';
 }
