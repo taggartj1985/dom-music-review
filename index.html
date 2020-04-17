@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Album List</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <script src="js/app.js"></script>
+</head>
+<body>
+  <h3>Add Album And Rating Here</h3>
+
+  <form id="new-item-form">
+    <div id="form-item">
+      <label for="artist" class="primary">Artist</label>
+      <input type="text" id="artist" required/>
+    </div>
+
+    <div id="form-item">
+      <label for="album" class="primary">Album</label>
+      <input type="text" id="album" required/>
+    </div>
+
+    <div class="form-item">
+          <label for="genre" class="primary">Genre</label>
+          <select id="category">
+            <option value="" disabled selected></option>
+            <option value="Rock">Rock</option>
+            <option value="Pop">Pop</option>
+            <option value="Funk">Funk</option>
+            <option value="Jazz">Jazz</option>
+            <option value="Metal">Metal</option>
+          </select>
+      </div>
+
+      <div class="form-item">
+          <label for="review" class="primary">Album Review</label><br>
+          <input type="radio" class="1-star" name="review" value="1-star" required/>
+          <label for="1-star">1 Star</label><br>
+          <input type="radio" class="2-star" name="review" value="2-star" required/>
+          <label for="2-star">2 Star</label><br>
+          <input type="radio" class="3-star" name="review" value="3-star" required/>
+          <label for="3-star">3 Star</label><br>
+          <input type="radio" class="4-star" name="review" value="4-star" required/>
+          <label for="4-star">4 Star</label><br>
+          <input type="radio" class="5-star" name="review" value="5-star" required/>
+          <label for="5-star">5 Star</label><br>
+        </div>
+
+      <input type="submit" value="save"/>
+
+  </form>
+
+  <button id="delete-all">Delete All</button>
+
+  <h1>Album Reviews</h1>
+  <ul id="album-list"></ul>
+</body>
+</html>
