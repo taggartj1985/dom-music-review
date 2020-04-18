@@ -9,9 +9,11 @@
   <script src="js/app.js"></script>
 </head>
 <body>
-  <h3>Add Album And Rating Here</h3>
 
+  <h3>Add Album And Rating Here</h3>
+  <div class="form-background">
   <form id="new-item-form">
+    <div id="form-layout">
     <div id="form-item">
       <label for="artist" class="primary">Artist</label>
       <input type="text" id="artist" required/>
@@ -37,21 +39,23 @@
       <div class="form-item">
           <label for="review" class="primary">Album Review</label><br>
           <input type="radio" class="1-star" name="review" value="1 Star" required/>
-          <label for="1 star">1 Star</label><br>
+          <label for="1 star">1 Star</label>
           <input type="radio" class="2-star" name="review" value="2 Star" required/>
-          <label for="2 star">2 Star</label><br>
+          <label for="2 star">2 Star</label>
           <input type="radio" class="3-star" name="review" value="3 Star" required/>
-          <label for="3 star">3 Star</label><br>
+          <label for="3 star">3 Star</label>
           <input type="radio" class="4-star" name="review" value="4 Star" required/>
-          <label for="4 star">4 Star</label><br>
+          <label for="4 star">4 Star</label>
           <input type="radio" class="5-star" name="review" value="5 Star" required/>
-          <label for="5 star">5 Star</label><br>
+          <label for="5 star">5 Star</label>
         </div>
+      </div>
 
       <input type="submit" value="save"/>
 
-  </form>
 
+  </form>
+</div>
   <button id="delete-all">Delete All</button>
 
   <h1>Album Reviews</h1>
