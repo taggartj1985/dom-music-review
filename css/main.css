@@ -1,6 +1,6 @@
 body {
   font-family: Palatino;
-  /* background-image: url(./images/keys.jpg); */
+  background-image: url(./images/keys.jpg);
   background-size: 100%;
   background-image: linear-gradient(10px);
   background-color: #A1B5D8;
@@ -42,13 +42,27 @@ button, input[type="submit"] {
   border: 5px solid #6852B0;
   border-radius: 5%;
   background: #61A5D5;
+  width: 25%;
+  height: 10%;
 }
 
 .form-background{
   width: 80%;
   height: 10%;
-  background: lightblue;
+  background: #61A5D5;
   text-align: center;
   margin: auto;
+  padding: 1rem 1rem;
+  border: 5px solid #6852B0;
+  border-radius: 5%
 
+}
+
+/* .center-text{
+  text-align: center;
+} */
+/* hard to see with piano background if in center */
+
+.star-1{
+  image: url(./images/1-star.png);
 }
